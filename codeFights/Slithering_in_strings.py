@@ -123,6 +123,7 @@ Example
 
 For s = "We expect the %f%% growth this week", the output should be
 newStyleFormatting(s) = "We expect the {}% growth this week".'''
+import re
 def newStyleFormatting(s):
 
     sub1 = re.sub('%%', '{%}', s)
