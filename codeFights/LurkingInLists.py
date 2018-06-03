@@ -9,7 +9,7 @@ listsConcatenation(lst1, lst2) = [2, 2, 1, 10, 11].'''
 def listsConcatenation(lst1, lst2):
     res = lst1
     res.extend(lst2)
-    return res
+    return res 
 
 
 '''There are some students standing in a row, each has some number written on their back. The students are about to divide into two teams by counting off by twos: those standing at the even positions (0-based) will go to team A, and those standing at the odd position will join the team B.
@@ -22,6 +22,7 @@ For students = [1, 11, 13, 6, 14], the output should be
 twoTeams(students) = 11.
 
 Students with numbers 1, 13 and 14 will join team A, and students with numbers 11 and 6 will join team B. Thus, the answer is (1 + 13 + 14) - (11 + 6) = 11.'''
+
 def twoTeams(students):
     return sum(students[0::2]) - sum(students[1::2])
 
@@ -36,6 +37,7 @@ Example
 For k = 3 and toDo = [1237, 2847, 27485, 2947, 1, 247, 374827, 22],
 the output should be
 removeTasks(k, toDo) = [1237, 2847, 2947, 1, 374827, 22].'''
+
 def removeTasks(k, toDo):
     del toDo[k-1::k]
     return toDo
